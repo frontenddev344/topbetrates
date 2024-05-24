@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
     <link rel="icon" href="assets/images/fav-icn.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
@@ -109,7 +110,7 @@
         <div class="welcome-wrap">
           <div class="welcome-left">
               <img src="assets/images/hero-banner.webp" alt="" class="first-img">
-              <div class="about-img">
+              <div class="about-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <img src="assets/images/skyline-img.jfif" alt="">
               </div>
           </div>
@@ -153,7 +154,7 @@
                   
                 </div>
                 <div class="explore-btn">
-                  <a href="#" >
+                  <a href="alojamiento.html" >
                     explorar</a>
                 </div>
               </div>
@@ -174,7 +175,7 @@
                 
               </div>
               <div class="explore-btn">
-                <a href="#" >
+                <a href="atracciones.html" >
                   explorar</a>
               </div>
             </div>
@@ -195,7 +196,7 @@
              
             </div>
             <div class="explore-btn">
-              <a href="#" >
+              <a href="restaurantes.html" >
                 explorar</a>
             </div>
           </div>
@@ -295,7 +296,13 @@
 
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
