@@ -41,9 +41,11 @@ ul {
 a {
     text-decoration: none;
 }
-.container{
+.container, .casino-welcome .casino-wrap, .casino-card .container-fluid {
     max-width: 1920px;
     margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 img {
     width: 100%;
@@ -429,10 +431,10 @@ width: 100%;
 .hotels-sec .col-lg-4, .hotels-sec .col-lg-6 {
     margin-bottom: 25px;
 }
-.casino-welcome  .casino-wrap, .casino-card .container-fluid{
+/* .casino-welcome  .casino-wrap, .casino-card .container-fluid{
     max-width: 1920px;
     margin: 0 auto;
-}
+} */
 /* sub pages css end */
 
 /* contact us page css start */

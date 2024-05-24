@@ -208,6 +208,9 @@
 .footer-heading h3 {
     margin-bottom: 10px;
 }
+.casino-right {
+    padding: 20px;
+}
 }
 @media(max-width:850px){
     .welcome-wrap {
@@ -242,11 +245,14 @@
     }
     .casino-left {
         height: 320px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .casino-card .explore-btn, .casino-card .explore-btn {
         bottom: 15px;
         left: 15px;
+    }
+    .casino-right {
+        padding: 20px !important;
     }
 }
 @media(max-width:767px){
@@ -283,7 +289,10 @@
    
     .casino-left {
         height: 250px;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
+    }
+    .casino-right {
+        padding: 15px !important;
     }
     .casino-card .hotel-img {
         height: 220px;
