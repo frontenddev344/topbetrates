@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&display=swap');
+
+:root {
+    --dark: #425c0f;
+    --blue: #6B8E23;
+    --bg: #e7f3ce54;
+    --gray:#6E665E;
+    --white:#fff;
+    --black:#000;
+}
+
+/* global css start here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Marcellus", serif;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+.ptb-70{
+    padding: 70px 0;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+/* global css end here */
+
+/* header css start here */
+
+header.site-header {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.top-nav{
+    background-color: var(--white);
+}
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.nav-wrap ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.site-logo img {
+    width: 200px;
+}
+.nav-bar ul li a {
+    font-size: 18px;
+    color: var(--gray);
+    transition: all 0.3s linear;
+
+}
+.nav-bar ul li a:hover{
+    color: var(--blue);
+}
+.toggle{
+    display: none;
+}
+/* main nav css */
+nav{
+    background-color: var(--blue);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+nav ul li{
+    padding: 10px 0;
+    position: relative;
+}
+nav ul li::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--white);
+    transition: all 0.3s linear;
+ 
+}
+nav ul li:hover::before, nav ul li.active::before{
+    width: 100%;
+}
+nav ul li a{
+    font-size: 20px;
+    color:var(--white);
+}
+nav ul li a:hover {
+color: var(--white);
+}
+/* main nav css end*/
+
+
+
+/* header css end here */
+
+
+/* hero banner section css start  */
+.site-banner{
+    background-image: url('../images/hero-banner-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.banner-wrap{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    transform: translateY(-50px);
+}
+.banner-txt h1 {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner-txt p{
+    color: var(--white);
+    font-size: 20px;
+}
+/* hero banner section css end  */
+/* wel come section css start */
+.welcome-wrap {
+    display: flex;
+    align-items: center;
+    height: 550px;
+}
+.welcome-left, .wel-come-right{
+    width: 50%;
+}
+.welcome-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.welcome-left{
+    position: relative;
+    height: 100%;
+}
+.wel-come-right{
+    padding: 50px;
+}
+.welcome-left .first-img{
+    width: 80%;
+    height: 100%;
+}
+.about-img {
+position: absolute;
+bottom: 0;
+right: 0;
+height: 75%;
+width: 70%;
+border: 8px solid #fff;
+border-right: none;
+}
+.wel-come-right p {
+    font-size: 18px;
+}
+
+/* welcome section css end  */
+
+/* card section css start */
+.hotel-img {
+    height: 250px;
+    overflow: hidden;
+}
+.hotel-txt h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.hotel-txt p{
+    font-size: 16px;
+}
+.explore-btn a {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 8px 30px;
+    background-color: var(--blue);
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s linear;
+
+}
+.explore-btn a:hover{
+    background-color: var(--dark);
+}
+.hotel-txt {
+    padding: 20px;
+}
+.hotel-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hotel-wrap{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    transition: all 0.5s linear;
+    height: 100%;
+}
+.hotel-wrap::after{
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    width: 5px;
+    height: 0%;
+    background-color: #6B8E23;
+    z-index: -1;
+    transition: all 0.5s linear;
+
+}
+.hotel-wrap .explore-btn {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.hotel-wrap .hotel-txt {
+    padding: 20px 20px 60px 20px;
+}
+.hotel-wrap::before{
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+    width: 0%;
+    height: 5px;
+    background-color: #6B8E23;
+    z-index: -1;
+    transition: all 0.5s linear;
+
+}
+
+.hotel-wrap:hover::before{
+width: 100%;
+}
+.hotel-wrap:hover::after{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hotel-wrap .hotel-img {
+	position: relative;
+}
+.hotel-wrap .hotel-img::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.hotel-wrap .hotel-img:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+
+/* card section css start */
+
+/* sub pages css start */
+.sub-banner{
+    background-image: url(../images/hero-banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+.sub-banner .banner-wrap  {
+    align-items: center;
+    transform: translateY(0px);
+ 
+}
+.sub-banner .banner-wrap .banner-txt h2{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.casino-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    background-color: #f1f1f1;
+}
+.casino-left, .casino-right{
+    width: 50%;
+}
+.casino-left{
+    height: 100%;
+}
+.casino-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.casino-right{
+    padding: 30px;
+}
+.casino-right p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* .casino-card .hotel-wrap{
+    height: 100%;
+}
+.casino-card .hotel-txt{
+    position: relative;
+    padding-bottom: 60px;
+} */
+.casino-card .explore-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.casino-card .hotel-img {
+    height: 300px;
+    overflow: hidden;
+}
+.site-heading h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 700;
+    width: 60%;
+    margin: 0 auto;
+    color: var(--black);
+}
+.hotels-sec .col-lg-4, .hotels-sec .col-lg-6 {
+    margin-bottom: 25px;
+}
+.casino-welcome  .casino-wrap, .casino-card .container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* sub pages css end */
+
+/* contact us page css start */
+.contact-wrap h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.contact-wrap p{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.contact-wrap p a{
+    font-weight: 600;
+    color: var(--dark);
+}
+.contact-wrap{
+    margin-bottom: 20px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    background-color: var(--white);
+}
+.form-group textarea{
+    height: 250px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.contact-form{
+    padding: 50px;
+    background-color: var(--bg);
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.contact-form form{
+    width: 100%;
+}
+:focus-visible {
+    outline: none;
+}
+.contact-form button{
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: var(--blue);
+    border: 1px solid #6B8E23;
+    color: var(--white);
+    transition: all 0.3s linear;
+
+}
+.contact-form button:hover{
+    background-color: #425c0f;
+}
+.privacy-wrap{
+    margin-bottom: 25px;
+}
+.privacy-wrap ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin: 10px 0;
+}
+.privacy-wrap p, .privacy-wrap ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.privacy-wrap p a{
+    font-weight: 600;
+    color: #000;
+    word-wrap: break-word;
+}
+/* contact us page css end */
+
+
+
+
+/* footer css start  */
+.site-footer{
+  background-image: url(../images/footer-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.site-footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    opacity: 0.7;
+}
+.site-footer .container{
+    position: relative;
+}
+.footer-heading h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+.footer-links ul li{
+    margin-bottom: 8px;
+}
+.footer-links ul li a{
+font-size: 18px;
+color: #fff;
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.social-links ul li a{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--white)
+}
+
+/* footer css end  */

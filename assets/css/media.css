@@ -1,0 +1,343 @@
+
+
+@media(max-width:1400px){
+    .casino-wrap{
+        height: 500px;
+    }
+}
+@media(max-width:1200px){
+    .nav-bar ul li a, .banner-txt p, .wel-come-right p, .footer-links ul li a, .casino-right p, .contact-wrap p {
+        font-size: 16px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    .banner-txt h1 {
+        font-size: 45px;
+    }
+    .welcome-wrap {
+        height: 450px;
+    }
+    .hotel-txt h3 {
+        font-size: 22px;
+    }
+    .explore-btn a {
+        font-size: 14px;
+    }
+    .hotel-img {
+        height: 220px;
+    }
+    .footer-heading h3 {
+        font-size: 22px;
+    }
+    .social-links ul li a {
+        height: 38px;
+        width: 38px;
+        font-size: 18px;
+    }
+    .sub-banner {
+        height: 400px;
+    }
+    .sub-banner .banner-wrap .banner-txt h2 {
+        font-size: 35px;
+    }
+    .site-heading h3 {
+        font-size: 30px;
+    }
+    .ptb-70 {
+        padding: 60px 0;
+    }
+    .contact-wrap h4 {
+        font-size: 22px;
+    }
+    .contact-form {
+        padding: 40px;
+    }
+    .form-group textarea {
+        height: 220px;
+    }
+}
+
+@media(max-width:992px){
+    .toggle {
+    position: relative;
+
+        display: block;
+        z-index: 999;
+    }
+    .nav-bar{
+        display: none;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-direction: column;
+    }
+    nav ul li {
+        padding: 0px 0;
+    }
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: #6B8E23;
+        height: 100vh;
+        padding: 70px 0;
+        transform: translateY(-100%);
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+}
+.menuToggle .main-nav{
+    transform: translateY(0%);
+
+}
+
+.button {   
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .button:focus {
+    outline: none;
+  }
+  button::-moz-focus-inner {
+    border: 0;
+  }
+  .button.is-text {
+    background-color: transparent;
+    border: 0;
+  }
+  .button-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  #menu-button {
+    width: 40px;
+    height: 40px;
+    background-color: #6B8E23;
+    transition: background-color 2s ease;
+  }
+  /* Menu toggle button */
+  .icon {
+      line-height: 0;
+  }
+  .menu-icon {
+    text-align: right;
+    width: 20px;
+  }
+  .menu-icon::after, .menu-icon::before {
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 20px;
+    margin: 3px 0;
+    transition-duration: 0.5s;
+  }
+  .menu-icon::before {
+    width: 20px;
+  }
+  .menu-icon::after {
+    width: 11px;
+  }
+  #menu-button:hover .menu-icon::before {
+    width: 11px;
+    transition-duration: 0.5s;
+  }
+  #menu-button:hover .menu-icon::after{
+    width: 20px;
+    transition-duration: 0.5s;
+  }
+  #menu-button.is-opened {
+    background-color: #fff;
+  }
+  #menu-button.is-opened .menu-icon::before {
+    transform: rotateZ(135deg) translate(3px, -3px);
+    width: 20px;
+    background-color: #6B8E23;
+  }
+  #menu-button.is-opened .menu-icon::after {
+    transform: rotateZ(-135deg) translate(3px, 3px);
+    width: 20px;
+    background-color: #6B8E23;
+
+  }
+  .footer-heading h3 {
+    font-size: 22px;
+}
+.pb-70 {
+    padding-bottom: 50px;
+}
+.ptb-70{
+    padding: 50px 0;
+}
+.wel-come-right {
+    padding: 30px;
+}
+.sub-banner {
+    height: 350px;
+}
+.sub-banner .banner-wrap .banner-txt h2 {
+    font-size: 32px;
+}
+.casino-wrap {
+    height: 550px;
+}
+.casino-card .hotel-img {
+    height: 250px;
+}
+.contact-main .row{
+    flex-direction: column-reverse;
+}
+.contact-form {
+    margin-bottom: 30px;
+}
+.site-footer .col-lg-3 {
+    margin-bottom: 30px;
+}
+
+.footer-heading h3 {
+    margin-bottom: 10px;
+}
+}
+@media(max-width:850px){
+    .welcome-wrap {
+        height: auto;
+        flex-direction: column;
+    }
+    .welcome-left, .wel-come-right {
+        width: 100%;
+    }
+    .wel-come-right {
+        padding: 15px;
+    }
+    .hotel-wrap .hotel-txt {
+        padding: 15px 15px 55px 15px;
+    }
+    .social-links ul {
+        gap: 20px;
+    }
+    .welcome-left {
+        height: 500px;
+    }
+    .site-heading h3 {
+        font-size: 25px;
+    }
+    .casino-wrap {
+        height: auto;
+        flex-direction: column;
+    }
+    .casino-left, .casino-right {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .casino-left {
+        height: 320px;
+        margin-bottom: 20px;
+    }
+    .casino-card .explore-btn, .casino-card .explore-btn {
+        bottom: 15px;
+        left: 15px;
+    }
+}
+@media(max-width:767px){
+    .site-footer .col-lg-3:last-child
+{
+    margin-bottom: 0;
+}
+    .site-banner {
+        height: 60vh;
+    }
+    .banner-txt h1 {
+        font-size: 40px;
+    }
+    .banner-txt {
+        padding: 0 20px;
+    }
+    .wel-come-right {
+        padding: 15px 0;
+    }
+    .welcome-left {
+        height: 400px;
+    }
+    .ptb-70 {
+        padding: 30px 0;
+    }
+
+    .site-heading h3 {
+        font-size: 25px;
+        width: 85%;
+    }
+    .site-footer .col-lg-3 {
+        margin-bottom: 20px;
+    }
+   
+    .casino-left {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    .casino-card .hotel-img {
+        height: 220px;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+    .form-group input, .form-group textarea {
+        height: 42px;
+    }
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    .contact-wrap h4 {
+        font-size: 20px;
+    }
+    .contact-wrap {
+        margin-bottom: 15px;
+    }
+    .form-group textarea {
+        height: 180px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:575px){
+    .sub-banner .banner-wrap .banner-txt h2 {
+        font-size: 30px;
+    }
+    .sub-banner {
+        height: 300px;
+    }
+    .casino-left {
+        height: 230px;
+    }
+    .site-logo img {
+        width: 160px;
+    }
+    #menu-button {
+        width: 35px;
+        height: 35px;
+      }
+
+      .menu-icon::after,  #menu-button:hover .menu-icon::before {
+        width: 9px;
+    }
+    .menu-icon::before,  .menu-icon,  #menu-button.is-opened .menu-icon::before, #menu-button.is-opened .menu-icon::after,   #menu-button:hover .menu-icon::after{
+        width: 18px;
+    }
+   
+   
+  
+ 
+
+}
