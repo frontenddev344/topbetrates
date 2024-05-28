@@ -162,13 +162,13 @@ color: var(--white);
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     text-align: center;
-    transform: translateY(-50px);
+    /* transform: translateY(-50px); */
 }
 .banner-txt h1 {
     color: var(--white);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
 }
 .banner-txt p{
@@ -399,7 +399,7 @@ width: 100%;
     padding: 30px;
 }
 .casino-right p{
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
@@ -512,9 +512,21 @@ width: 100%;
     word-wrap: break-word;
 }
 /* contact us page css end */
+/* conclusion css start here */
+.conclusion-sec{
+    background-color: #eee;
+    padding: 30px 0;
+}
+.conclusion-wrap p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.conclusion-wrap p:last-child{
+    margin-bottom: 0;
+}
 
-
-
+/* conclusion css end here */
 
 /* footer css start  */
 .site-footer{
